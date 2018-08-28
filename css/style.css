@@ -53,6 +53,7 @@ p {
   font-size: 20px;
   font-style: bold;
 }
+
 /* ---------Navbar--------- */
 
 #logo {
@@ -111,39 +112,67 @@ nav ul li a {
   color: #fff;
   display: none;
 }
+
 /* ---------Header--------- */
 header {
-   background: #3e5151;
-  background:url("../img/desk.jpg")no-repeat,-webkit-linear-gradient(rgba(62, 81, 81, 1), rgba(222, 203, 164, 1));
-  background:url("../img/desk.jpg")no-repeat,-o-linear-gradient(rgba(62, 81, 81, 1), rgba(222, 203, 164, 1));
-  background:url("../img/desk.jpg")no-repeat,linear-gradient(rgba(62, 81, 81, 1), rgba(222, 203, 164, 1));
+  background:url("../img/desk.jpg") #3e5151;
+  background:url("../img/desk.jpg")no-repeat,;/* -webkit-linear-gradient(rgba(62, 81, 81, 1), rgba(222, 203, 164, 1)); */
+  background:url("../img/desk.jpg")no-repeat,;/* -o-linear-gradient(rgba(62, 81, 81, 1), rgba(222, 203, 164, 1));*/
+  background:url("../img/desk.jpg")no-repeat,;/*linear-gradient(rgba(62, 81, 81, 1), rgba(222, 203, 164, 1));*/
   background-attachment: fixed;
   background-size: cover;
   background-position: center top;
   height:100vh;
   width: 100%;
 }
-
+.container {
+  width: 960px;
+  margin: 50px auto;
+}
 .intro {
   max-width: 960px;
   margin: 0 auto;
-  padding: 8% 0;
+  padding: 17% 0;
 }
-.intro h1 {
+  .intro h1 {
   font-size: 4em;
   color: #fff;
   text-transform: uppercase;
   font-weight: 800;
   line-height: 1.5em;
-
+  /* animation: typing 4s steps(60,end);
+  white-space: nowrap;
+  overflow: hidden; */
 }
-.intro h2 {
+  .intro h2 {
   font-size: 2em;
   color: #fff;
   font-weight: 300;
   text-transform: capitalize;
   letter-spacing: 0.09em;
+  /* animation: typing 4s steps(60,end);
+  white-space: nowrap;
+  overflow: hidden; */
 }
+  /* h1, h2:nth-child(2) {
+    animation: typing-2 8s steps(60,end);
+  }
+
+@keyframes typing {
+  from {width:0;}
+}
+@keyframes typing-2{
+  0% {width: 0;}
+  50% {width: 0;}
+  100% {width: 100;}
+}
+@keyframes blink {
+  to {opacity: .0;}
+}
+
+.cursor {
+  animation: blink 1s infinite;
+} */
 /* ------ Works------  */
 .works {
   height: 300px;
@@ -231,6 +260,16 @@ header {
 .about p a {
   color: #E1CCC9;
   border-bottom: 2px solid;
+}
+
+.btncv {
+  height:auto;
+  width:auto;
+  color: white;
+  background-color: rgb(40, 114, 168);
+  border: 3px solid grey;
+  padding: 10px 25px;
+
 }
 /* ---------Contact--------- */
 .contact {
