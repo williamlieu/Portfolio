@@ -1,29 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro');
-
-
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro");
 
 /* ---------Global--------- */
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-	min-height: 100vh;
-	background-color: #fafafa;
+  min-height: 100vh;
+  background-color: #fafafa;
+  font-family: "Open Sans", Helvetica, sans-serif;
 }
 
 a {
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   text-decoration: none;
-
 }
 em {
   font-style: oblique;
@@ -34,15 +32,17 @@ strong {
 img {
   width: 100%;
 }
-h1, h2, h3, h4, h5 {
-  font-family: proxima-nova, sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-style: normal;
-
 }
 h3 {
   text-transform: capitalize;
-  font-size: 1.875em;
-  padding: 0 0 1% 0;
+  font-size: 1.8em;
+
   color: #001833;
   font-weight: 800;
 }
@@ -98,7 +98,6 @@ nav ul li a {
   padding-bottom: 5px;
 }
 .menu a:hover {
-  color: #000;
   border-bottom: red solid 1px;
 }
 .menu-icon {
@@ -114,88 +113,60 @@ nav ul li a {
 }
 
 /* ---------Header--------- */
-header {
-  background:url("../img/desk.jpg") #3e5151;
-  background:url("../img/desk.jpg")no-repeat,;/* -webkit-linear-gradient(rgba(62, 81, 81, 1), rgba(222, 203, 164, 1)); */
-  background:url("../img/desk.jpg")no-repeat,;/* -o-linear-gradient(rgba(62, 81, 81, 1), rgba(222, 203, 164, 1));*/
-  background:url("../img/desk.jpg")no-repeat,;/*linear-gradient(rgba(62, 81, 81, 1), rgba(222, 203, 164, 1));*/
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 1160px;
+}
+.intro {
+  background-image: url("../img/desk.jpg");
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center top;
-  height:100vh;
-  width: 100%;
-}
-.container {
-  width: 960px;
-  margin: 50px auto;
-}
-.intro {
-  max-width: 960px;
+  height: 100vh;
+  max-width: 1460px;
   margin: 0 auto;
-  padding: 17% 0;
+  padding: 15px 0;
+  display: flex;
 }
-  .intro h1 {
+.intro h1 {
   font-size: 4em;
   color: #fff;
   text-transform: uppercase;
   font-weight: 800;
   line-height: 1.5em;
-  /* animation: typing 4s steps(60,end);
-  white-space: nowrap;
-  overflow: hidden; */
 }
-  .intro h2 {
+.intro h2 {
   font-size: 2em;
   color: #fff;
   font-weight: 300;
   text-transform: capitalize;
   letter-spacing: 0.09em;
-  /* animation: typing 4s steps(60,end);
-  white-space: nowrap;
-  overflow: hidden; */
 }
-  /* h1, h2:nth-child(2) {
-    animation: typing-2 8s steps(60,end);
-  }
-
-@keyframes typing {
-  from {width:0;}
-}
-@keyframes typing-2{
-  0% {width: 0;}
-  50% {width: 0;}
-  100% {width: 100;}
-}
-@keyframes blink {
-  to {opacity: .0;}
-}
-
-.cursor {
-  animation: blink 1s infinite;
-} */
 /* ------ Works------  */
 .works {
-  height: 300px;
-  padding: 2% 0;
+  max-height: 300vh;
+  background-color: lightsteelblue;
 }
 .works h3 {
   padding: 4% 0;
 }
 .text-box {
-  float: left;
+  display: flex;
   text-align: left;
   width: 480px;
   background-color: #fff;
   height: 109%;
 }
 .text-box-content {
-  padding: 4% 8%;
-  height:300px;
+  padding: 5px;
+  height: 300px;
 }
 .text-box-content p {
   line-height: 1.8;
   color: #616569;
-  letter-spacing: .03em;
+  letter-spacing: 0.03em;
   font-size: 1em;
 }
 .button {
@@ -235,49 +206,55 @@ header {
 .wrapper {
   max-width: 960px;
   margin: 0 auto;
-  font-family: proxima-nova, sans-serif;
   -webkit-animation-delay: 4s;
   /* Chrome, Safari, Opera */
   animation-delay: 2s;
 }
 .about {
-  padding: 4% 0;
-  width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  padding: 80px 50px;
+  min-height: 70vh;
+}
+#about .container {
+  display: flex;
+  justify-content: space-between;
+}
+.about-picture {
+  width: 25%;
+}
+.about-me-desc {
+  width: 50%;
 }
 .about p {
-  font-family: proxima-nova, sans-serif;
   font-style: normal;
   font-weight: 300;
-  line-height: 1.8;
+  line-height: 1.4;
   color: #616569;
-  letter-spacing: .03em;
+  letter-spacing: 0.03em;
   margin: 10px auto;
-  font-size: 1.5em;
-  padding: 2% 0;
+  font-size: 1.3em;
+  padding: 15px 0;
 }
 .about p a {
-  color: #E1CCC9;
+  color: #e1ccc9;
   border-bottom: 2px solid;
 }
 
 .btncv {
-  height:auto;
-  width:auto;
+  height: auto;
+  width: auto;
   color: white;
   background-color: rgb(40, 114, 168);
-  border: 3px solid grey;
-  padding: 10px 25px;
-
+  padding: 10px 15px;
 }
 /* ---------Contact--------- */
 .contact {
-  width: 100%;
-  background-color: #011833;
-  padding: 5% 0;
-  margin-top: 5%;
+  min-height: 100vh;
+  min-width: 1160px;
+  background: url("../img/map.png") no-repeat;
+  background-size: cover;
   clear: both;
+  color: #011833;
 }
 .contact-content {
   max-width: 960px;
@@ -285,47 +262,43 @@ header {
   text-align: center;
 }
 .contact-content h4 {
-  font-size: 1.875em;
-  padding: 1% 0;
-  color: #fff;
+  font-size: 1.6em;
+  color: darkblue;
   font-weight: 600;
   letter-spacing: 0.04em;
 }
 .contact-content a {
-  color: #E0CCC8;
+  color: #e0ccc8;
   text-decoration: none;
 }
 /* ---------Footer--------- */
 footer {
   background-color: #6082b5;
   color: #fff;
-  padding: 2% 0;
+  padding-top: 30px;
   width: 100%;
   clear: both;
-  height: 100v%;
 }
-.footer-content {
-  max-width: 960px;
-  padding: 2% 0;
+/* .footer-content {
+  max-width: 1160px;
+  padding: 15px;
   margin: 0 auto;
   font-family: proxima-nova, sans-serif;
   font-style: normal;
   font-weight: 300;
   line-height: 1.4;
   color: #fff;
-  letter-spacing: .03em;
+  letter-spacing: 0.03em;
   font-size: 1em;
-}
+} */
 .credit {
+  font-size: 16px;
   text-align: center;
 }
 .social-icon {
   text-align: center;
-  display: inline;
 }
-.social-icon ul li {
-  display: inline;
-}
+
 .social li a {
   color: #fff;
   padding: 0.2em;
@@ -337,9 +310,14 @@ footer {
 }
 /* ---------Responsive--------- */
 
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width: 620px) {
   .wrapper {
     padding: 0% 4%;
+  }
+
+  .intro {
+    width: 100%;
+    height: 50%;
   }
   .works {
     padding: 4% 0;
@@ -360,7 +338,7 @@ footer {
     padding: 3.5%;
   }
 }
-@media only screen and (max-width:800px) {
+@media only screen and (max-width: 800px) {
   .intro h1 {
     font-size: 4em;
     line-height: 1.2;
@@ -399,6 +377,14 @@ footer {
     margin-top: 16px;
     max-height: 5px;
   }
+  .intro h1 {
+    font-size: 2em;
+    line-height: 1.2;
+  }
+  .intro h2 {
+    font-size: 1em;
+    padding-top: 3%;
+  }
   nav ul {
     max-height: 0px;
     background: #000;
@@ -419,5 +405,8 @@ footer {
   }
   .menu-icon {
     display: block;
+  }
+  .contact {
+    width: 50%;
   }
 }

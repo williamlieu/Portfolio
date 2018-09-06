@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,140 +10,158 @@
   <link rel="stylesheet" href="css/style.css" class="hrel">
   <title>William</title>
 </head>
+
 <body>
   <!-- Navbar -->
   <nav class="navbar">
-            <div class="menu-icon">
-                <icon class="fa fa-bars fa2x"></icon>
-            </div>
-            <!-- <div class="logo">
-                <img src="img/Logo2.png" id="logo" />
-            </div> -->
-            <div class="menu">
-                <ul>
-                    <li>
-                        <a href="/" class="nav-link">Home</a>
-                    </li>
-                    <li>
-                        <a href="/works" class="nav-link">Projects</a>
-                    </li>
-                    <li>
-                        <a href="/about" class="nav-link">About</a>
-                    </li>
-                    <li>
-                        <a href="/contact" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-  <!-- Header -->
-  <header>
-      <div class="intro">
-        <h1>William LIEU</h1>
-        <h2>Front-end Developer
-        <span class="cursor"></span></h2>
+    <div class="menu-icon">
+      <icon class="fa fa-bars fa2x"></icon>
+    </div>
+    <!-- <div class="logo">
+      <img src="img/Logo2.png" id="logo" />
+    </div> -->
+    <div class="menu">
+      <ul>
+        <li>
+          <a href="/" class="nav-link">Home</a>
+        </li>
+        <li>
+          <a href="#about" class="nav-link">About</a>
+        </li>
+        <li>
+          <a href="#works" class="nav-link">Works</a>
+        </li>
+        <li>
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Introduction -->
+  <section id="home" class="home">
+    <div class="intro">
+      <div class="container">
+        <div class="box">
+          <h1>WL</h1>
+
+          <br/>
+          <h2>Front-end Developer
+            <span class="cursor"></span>
+          </h2>
         </div>
       </div>
-  </header>
-  <!-- About -->
-  <section>
-    <div class="about">
-      <div class="about-content"></div>
-      <h3> Hi i'm William </h3>
-      <p>  French Front-End Developer currently living in Sydney. I also hold a diploma in Business and Management.
-      <br/>
-      <br/>
-      When i'm not spending time in VSCode
-      </p>
-      <a class="btncv" href="link" target="_blank"> Resume</a>
     </div>
   </section>
-  <!-- works -->
-  <div class="wrapper">
-    <h1>Works</h1>
-    <section class="works">
-        <div class="img-area left">
-          <img src="img/Tictactoe.png" class="img">
-        </div>
-        <div class="text-box">
-          <div class="class text-box-content">
-            <h3> TicTacToe</h3>
-            <p>
-              Technologies: HTML,CSS,jQuery,Javascript
-            </p>
-            <a href="https://williamlieu.github.io/Tictactoe/" class="button">View project</a>
-          </div>
-        </div>
-    </section>
-    <section class="works">
-        <div class="img-area right">
-          <img src="img/Lets.png" class="img">
-        </div>
-        <div class="text-box">
-          <div class="class text-box-content">
-            <h3> Lets</h3>
-            <p>
-              Technologies: Rails, React,
-            </p>
-            <a href="#" class="button">View project</a>
-          </div>
-        </div>
-    </section>
-    <section class="works">
-        <div class="img-area left">
-          <img src="img/Tictactoe.png" class="img">
-        </div>
-        <div class="text-box">
-          <div class="class text-box-content">
-            <h3> Weather </h3>
-            <p>
-              Technologies: <React></React>
-            </p>
-            <a href="#" class="button">View project</a>
-          </div>
-        </div>
-    </section>
-
-    <section class="works">
-        <div class="img-area right">
-          <img src="img/Lets.png" class="img">
-        </div>
-        <div class="text-box">
-          <div class="class text-box-content">
-            <h3> TicTacToe</h3>
-            <p>
-              Technologies: HTML,CSS,jQuery,Javascript
-            </p>
-            <a href="#" class="button">View project</a>
-          </div>
-        </div>
-    </section>
-  </div>
-
-  <!-- Contact -->
-    <section class="contact">
-      <div class="contact-content">
-        <h4>“The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle.”
-― Steve Jobs</h4>
-        <p>
-          Let's talk
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-picture">
+        <img src="../img/Logo2.png">
+      </div>
+      <div class="about-me-desc">
+        <h3> Who am I ? </h3>
+        <p> French Front-End Developer currently living in Sydney. Through several years as a Sales Consultant, I knew it was
+          time to move on to something more challenging.Atfer i was looking for an intellectual stimulation environment.
+          <br/>That's when i took a google class certification and I did enjoy creating a website.
+          <br/> When i'm not spending my time to code, i enjoy spending my time reading books or running in the street.
         </p>
+        <a class="btncv" href="link" target="_blank">Resume</a>
       </div>
-    </section>
-    <footer>
-      <div class="footer-content">
-        <p class="credit"> William LIEU © 2018 All Right Reserved </p>
-        <ul class="social-icon">
-          <li><a href=""><i class="fab fa-linkedin" target="_blank" alt="linkedin"></i></a></li>
-          <li><a href=""><i class="fab fa-github" target="_blank" alt="github"></i></a></li>
-          <li><a href=""><i class="far fa-envelope" target="_blank" alt="mail"></i></a></li>
-        </ul>
+    </div>
+  </section>
+  <!-- Works -->
+  <section id="works" class="works">
+    <div class="wrapper">
+      <h1>Projects</h1>
+      <div class="img-area left">
+        <img src="img/Tictactoe.png" class="img">
+      </div>
+      <div class="text-box">
+        <div class="text-box-content">
+          <h3>TicTacToe</h3>
+          <p>
+            Technologies: HTML,CSS,jQuery,Javascript
+          </p>
+          <a href="https://williamlieu.github.io/Tictactoe/" class="button">View project</a>
+        </div>
+      </div>
+      <div class="img-area right">
+        <img src="img/Lets.png" class="img">
+      </div>
+      <div class="text-box">
+        <div class="text-box-content">
+          <h3> Lets</h3>
+          <p>
+            Technologies: Rails, React,PostgreSQL
+          </p>
+          <a href="#" class="button">View project</a>
+        </div>
+      </div>
+      <div class="img-area left">
+        <img src="img/Tictactoe.png" class="img">
+      </div>
+      <div class="text-box">
+        <div class="text-box-content">
+          <h3> Weather </h3>
+          <p>
+            Technologies: React, API,
+          </p>
+          <a href="#" class="button">View project</a>
+        </div>
+      </div>
+      <div class="img-area right">
+        <img src="img/Lets.png" class="img">
+      </div>
+      <div class="text-box">
+        <div class="text-box-content">
+          <h3> TicTacToe</h3>
+          <p>
+            Technologies: HTML,CSS,jQuery,Javascript
+          </p>
+          <a href="#" class="button">View project</a>
+        </div>
       </div>
 
-    </footer>
+    </div>
+  </section>
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="contact-content">
+
+      <h4>“The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle.” ―
+        Steve Jobs</h4>
+      <br/>
+      <p>
+        Let's get in touch!
+      </p>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <!-- <div class="footer-content"> -->
+      <p class="credit"> WL © 2018 All Right Reserved </p>
+      <br/>
+      <ul class="social-icon">
+        <li>
+          <a href="#">Linkedin</i>
+          </a>
+        </li>
+        <li>
+          <a href="#">Github</i>
+          </a>
+        </li>
+        <li>
+          <a href="#">Email</i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </footer>
 
   </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/script.js"></script>
 </body>
+
 </html>
