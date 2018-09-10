@@ -263,21 +263,27 @@ nav ul li a {
 .contact {
   min-height: 50vh;
   background-size: cover;
+  background-image: url("../img/mountains.jpg");
+  background-repeat: no-repeat;
   clear: both;
   color: #011833;
+  justify-content: center;
 }
 .contact-content {
   margin: 0 auto;
   text-align: center;
+  padding-top: 105px;
 }
-.contact-content h4 {
+.contact-content h1 {
   font-size: 1.6em;
   color: darkblue;
   font-weight: 600;
   letter-spacing: 0.04em;
+  margin: 15px;
 }
 .contact-content a {
-  color: #e0ccc8;
+  color: darkblue;
+  font-size: 20px;
   text-decoration: none;
 }
 /* ---------Footer--------- */
@@ -288,26 +294,11 @@ footer {
   min-height: 150px;
   clear: both;
 }
-/* .footer-content {
-  max-width: 1160px;
-  padding: 15px;
-  margin: 0 auto;
-  font-family: proxima-nova, sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 1.4;
-  color: #fff;
-  letter-spacing: 0.03em;
-  font-size: 1em;
-} */
+
 .credit {
   font-size: 16px;
   text-align: center;
 }
-.social-icon {
-  text-align: center;
-}
-
 .social li a {
   color: #fff;
   padding: 0.2em;
