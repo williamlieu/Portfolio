@@ -209,15 +209,16 @@ nav ul li a {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  width: 480px;
+  max-width: 480px;
   background-color: #fff;
-  height: 109%;
+  min-height: 400px;
   justify-content: center;
+  align-items: center;
 }
 .text-box-content {
   padding: 5px;
-  height: 300px;
-  min-width: 300px;
+  max-height: 300px;
+  max-width: 300px;
 }
 .text-box-content p {
   line-height: 1.8;
@@ -246,6 +247,10 @@ nav ul li a {
   width: 480px;
   height: 300px;
   overflow: hidden;
+}
+.img {
+  max-width: 480px;
+  max-height: 400px;
 }
 .left {
   float: left;
@@ -287,51 +292,47 @@ nav ul li a {
   text-decoration: none;
 }
 /* ---------Footer--------- */
-footer {
-  background-color: #6082b5;
-  color: #fff;
-  padding-top: 30px;
-  min-height: 150px;
-  clear: both;
-}
 
-.credit {
-  font-size: 16px;
-  text-align: center;
-}
-.social li a {
-  color: #fff;
+.social-icon li a {
+  color: darkblue;
   padding: 0.2em;
   font-size: 1.8em;
   font-weight: 600;
 }
-.social li a:hover {
-  color: #011833;
+.social-icon li a:hover {
+  color: orange;
+}
+
+.icon-list {
+  display: inline;
+}
+.copyright {
+  padding: 30px;
 }
 /* ---------Responsive--------- */
 
 @media only screen and (max-width: 620px) {
   .wrapper {
-    padding: 0% 4%;
+    padding: 0px 15;
   }
-
   .intro {
     width: 100%;
     height: 50%;
   }
   .works {
-    padding: 4% 0;
+    padding: 20px 20px;
+    max-height: 400vh;
   }
   .img-area {
     float: left;
     width: 100%;
-    height: auto;
+    height: 100%;
   }
   .text-box {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
-  .social li a {
+  .social-icon li a {
     font-size: 1.4em;
   }
   .footer-content {
@@ -359,9 +360,7 @@ footer {
     padding: 4%;
     font-size: 14px;
   }
-  .social-icon {
-    float: left;
-  }
+
   .social-icon li a {
     font-size: 1.3em;
   }
@@ -371,11 +370,8 @@ footer {
   }
 }
 @media (max-width: 580px) {
-  .logo {
-    position: fixed;
-    top: 0;
-    margin-top: 16px;
-    max-height: 5px;
+  .intro {
+    height: 100vh;
   }
   .intro h1 {
     font-size: 2em;
@@ -385,6 +381,7 @@ footer {
     font-size: 1em;
     padding-top: 3%;
   }
+
   nav ul {
     max-height: 0px;
     background: #000;
@@ -405,8 +402,9 @@ footer {
   }
   .menu-icon {
     display: block;
+    height: 100px;
   }
   .contact {
-    width: 50%;
+    width: 100%;
   }
 }
